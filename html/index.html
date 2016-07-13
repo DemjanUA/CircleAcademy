@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>PHP</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/main.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,800,500,600' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+	<div class="topnav_fixed_block">
+		<section>
+			<div class="container">
+				<nav class="top-nav clearfix">
+					<div class="navbar-header">
+					<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					        data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button> -->
+					<a class="site-name logo" href="#">CircleAcademy</a>
+				</div>
+					<menu class="clearfix">
+						<li><a href="#">News</a></li>
+						<li><a href="./resource">Resource</a></li>
+						<li><a href="#">ipsum</a></li>
+						<li><a href="#">dolor</a></li>
+						<li><a href="#">sit</a></li>
+						<li><a href="#">amet</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">Login</a></li>
+					</menu>
+				</nav>
+		</div>
+		</section>
+	</div>
+	<div class="function_fixed_block">
+		<h2>Functions</h2>
+		<ol>
+			<li><a href = "#">gettype()</a></li>
+			<li><a href = "#">print_r()</a></li>
+			<li><a href = "#">json_decod()</a></li>
+			<li><a href = "#">file_get_contents()</a></li>
+			<li><a href = "http://php.net/manual/ru/function.var-export.php">var_export()</a></li>
+		</ol>
+	</div>
+	<header>
+
+	</header>
+	<div class="wrapper">
+		<h2 class="tasks_title">Задачи</h2>
+		<p class="exercise">
+			1.	Создать папку с файлами  *.php и фалойм index.php.
+			В index.php инициализировать масив названий фалов, циклом foreach подключить файлы,
+			в случае подключения файла выводить имя файла + 'included' иначе 'File undefined'.
+		</p>
+		<p class="exercise">
+			2.	Инициализирован масив array('h','e','l','l','o');
+			Написать скрипт который выведет в результате.
+			'olleh' (не используя функцию array_reverse());
+		</p>
+		<p class="exercise">
+			3.	Создайте код, который выводит все простые числа из интервала от 1 до 100 с шагом 2.
+			Результат должен быть: 1,3,5,7,11,13,17,19,23,29 ...
+		</p>
+		<p class="exercise">
+			4.	Инициализирована переменная $a со значением скорости передвижения космического корабля a <pre> (0&lt;a&lt;600) </pre>
+			В зависимости от значений a определить и вывести траекторию полета космического корабля если нам извесно, что<br>
+			(a>=v1, v1=7,9) - космический корабль станет спутником Земли<br>
+			(a>=v2, v2=11,2) - космический корабль преодолеет гравитационное притяжение Земли<br>
+			(a>=v3, v3=16,650) - космический корабль покинет звёздную систему, преодолев притяжение Сонцы<br>
+			(a>=v4, v4=550) - космический корабль покинет галактику<br>
+		</p>
+		<p class="exercise">
+			5.	Последовательность чисел Фибоначчи имеет формулу Fn = Fn-1 + Fn-2. То есть, следующее число получается как сумма двух предыдущих.<br>
+			Первые два числа равны 1, затем 2(1+1), затем 3(1+2), 5(2+3) и так далее: 1, 1, 2, 3, 5, 8, 13, 21....<br>
+			Напишите функцию fib(n), которая возвращает n-е число Фибоначчи.<br>
+		</p>
+		<p class="exercise">
+			6.	Создать квадратный двумерный массив 10x10 заполнив его случайными числами (rand(0,50)). Посчитать сумму чисел по диагонали от (0;0) до (10;10).
+		</p>
+		<p class="exercise">
+			7.	Создать масив от 0 до 100. Внести в него случайным образом числа rand(0,10). Посчтиать сколько раз какие числа повторяются.
+		</p>
+		<h2 class="home-work_title tasks_title">Домашка(Используя функции)</h2>
+		<p class="exercise">
+			1. Из файла http://demjan.890m.com/resource/home_work_JSON.json с помощю команды json_decode(file_get_contents($file), true); и скопировать себе в файл
+			 people.txt все записи login и password у которых status = 1.<br>
+			<a href="http://php.net/manual/ru/function.json-decode.php">json_decode()</a><br>
+			json -  текстовый формат обмена данными<br>
+
+		</p>
+		<p class="exercise">
+			2. Каждый у себя в ФТП директории создает файл: FIO.txt куда вносит свои данные (ФИО).<br>
+			Скачать вот этот <a download href="http://demjan.890m.com/resource/Hello.php">файл</a> и залить себе на сервер.<br>
+
+			Нужно создать скрипт который прочитает эти данные в переменную $fio.
+			Подключить файл Hello.php.
+			Запустить свои скрпит на веб-сервере.
+		</p>
+		<!--<p class="exercise">
+			дан такой двумерный масив
+			<pre>
+				$array = array();
+				for ($j=0; $j<10; $j++) {
+    		for ($i = 0; $i < 10; $i++) {
+        		$array[$j][$i] = rand(10, 100);
+    		}
+			}
+			</pre>
+			Посчитать сумму элементов отдельно в каждой строке и определить номер строки,  в которой эта сумма максимальна.
+		</p> -->
+		<!-- *********************************** -->
+		<br>
+		<br>
+		<!-- *********************************** -->
+		<ul>
+	 		<li><a target="_blank" href="#"> lecture 1</a></li>
+			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTNmJGZEZGVXRGRm8/view"> lecture 2</a></li>
+			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTZEZYRl93a0FyS0k/view"> lecture 3</a></li>
+			<li>
+				<a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTUjItcllHNGRfUkk/view"> lecture 4 (Пользовательские функции)</a>
+				<ul>
+					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTTFBVaWVhc0dua3c/view"> lecture 4.1 (Функции работы с файлами)</a></li>
+					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTRHdZdFJiZTZxQ1k/view"> lecture 4.2 (Функции для работы со строками)</a></li>
+					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTR3pHN1F0amJuZ1k/view"> lecture 4.3 (Функции для работы с масивами)</a></li>
+				</ul>
+			</li>
+			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTMHdmcUQzMWRrbHc/view"> lecture 5 (Технология REST. Методы передачи данных GET и POST)</a></li>
+		</ul>
+		<br>
+		<video src="resource/htnl5_history.mp4" width="100%" height="auto" controls></video>
+		<br>
+	</div>
+	<footer style="margin:35px 0 0 0">
+		<div style="padding:80px 0; background:#28292A"></div>
+		<div style="padding:24px 0; background:#0E0E0E"></div>
+	</footer>
+</body>
+</html>
