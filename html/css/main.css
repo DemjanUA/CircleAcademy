@@ -27,6 +27,12 @@ li {
 form {
   margin:0;
 }
+button, input, select, textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
 table {
   border-collapse:collapse;
 }
@@ -86,16 +92,16 @@ header{
   background: #121212;
   transition: all 250ms ease-in-out;
 }
-.topnav_fixed_block nav{
+.topnav_fixed_block nav {
   border: 1px solid transparent;
 }
-.topnav_fixed_block nav menu{
+.topnav_fixed_block nav menu {
   float: right;
 }
-.topnav_fixed_block nav menu li{
+.topnav_fixed_block nav menu li {
   float: left;
 }
-.topnav_fixed_block nav menu li a{
+.topnav_fixed_block nav menu li a {
   display: block;
   padding: 0 20px;
   font: 500 11px/60px 'Raleway', 'Open Sans', Arial, Helvetica, Sans-serif;
@@ -107,10 +113,6 @@ header{
 .topnav_fixed_block nav menu li a:hover {
   color: #fff;
 }
-
-.topnav_fixed_block nav .navbar-header{
-  float: left;
-}
 .site-name.logo{
   display: block;
   height: 60px;
@@ -118,7 +120,19 @@ header{
   color: transparent;
   text-indent: -9999px;
   background: url('../img/logotype.png') no-repeat left center;
-  background-attachment: scroll;
+}
+.topnav_fixed_block nav .navbar-header {
+  float: left;
+}
+.topnav_fixed_block nav .navbar-header .navbar-toggle {
+  /*display: none;*/
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin: 8px 0;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 
