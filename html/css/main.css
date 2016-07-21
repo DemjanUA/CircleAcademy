@@ -11,7 +11,7 @@ a {
   text-decoration:none;
   color:cornflowerblue;
 }
-div {
+div, header {
   box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -75,11 +75,11 @@ table {
     width: 1170px;
   }
 }
-header{
-  min-height: 500px;
+header {
   background: url('../img/joust-s3.png') no-repeat;
   background-size: cover;
   margin: 62px 0 0 0;/*!!!!!!!!!!!!!!!!!!!!!*/
+  padding: 100px 5%;
 }
 /*********************************************/
 .topnav_fixed_block {

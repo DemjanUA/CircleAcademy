@@ -1,0 +1,10 @@
+header .illustration-stroke {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+header .illustration-fill {
+  fill: white;
+}
