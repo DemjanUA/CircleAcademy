@@ -129,10 +129,28 @@ header{
   position: relative;
   float: right;
   padding: 9px 10px;
-  margin: 8px 0;
-  background-color: transparent;
+  background-color: red;
   border: 1px solid transparent;
   border-radius: 4px;
+
+  width: 22px;
+  overflow: hidden;
+  box-sizing: initial;
+  color: transparent;
+  text-indent: -9000px;
+  font-size: 0;
+  line-height: 1em;
+  cursor: pointer;
+}
+.topnav_fixed_block nav .navbar-header  .icon-bar{
+  display: block;
+width: 22px;
+height: 2px;
+border-radius: 1px;
+background: #fff;
+}
+.topnav_fixed_block nav .navbar-header  .icon-bar + .icon-bar{
+  margin-top: 4px;
 }
 
 
@@ -143,7 +161,6 @@ header{
   position: fixed;
   min-height: 100%;
   width: 250px;
-  padding: 60px 0 0 0;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   top: 0;
   right: 0;
   border-left: 2px solid #e6e6e6;
