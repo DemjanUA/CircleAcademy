@@ -8,24 +8,24 @@ body {
   color: #333;
 }
 a {
-  text-decoration:none;
-  color:cornflowerblue;
+  text-decoration: none;
+  color: cornflowerblue;
 }
 div {
   box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin:0;
-  box-sizing:border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 ul, menu {
-  list-style : none;
+  list-style: none;
 }
 li {
 
 }
 form {
-  margin:0;
+  margin: 0;
 }
 button, input, select, textarea {
   outline: none;
@@ -37,15 +37,15 @@ table {
   border-collapse:collapse;
 }
 .clearfix:after {
-  content:"";
-  display:block;
-  width:100%;
-  clear:both;
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
 }
 .justify-fix:after {
-  content:"";
-  display:inline-block;
-  width:100%;
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 .row {
   margin: 0 -15px;
@@ -53,27 +53,6 @@ table {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-}
-.wrapper {
-  margin: 0 auto;
-  width: 1140px;
-  padding: 50px 90px 0;
-}
-@media (min-width: 768px){ /* >768px */
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px){/* >992px */
-  .container {
-    width: 970px;
-
-  }
-}
-@media (min-width: 1200px){ /* >1200px */
-  .container {
-    width: 1170px;
-  }
 }
 header{
   min-height: 500px;
@@ -96,7 +75,8 @@ header{
   border: 1px solid transparent;
 }
 .topnav_fixed_block nav menu {
-  float: right;
+  display: none;
+  float: none;
 }
 .topnav_fixed_block nav menu li {
   float: left;
@@ -121,15 +101,12 @@ header{
   text-indent: -9999px;
   background: url('../img/logotype.png') no-repeat left center;
 }
-.topnav_fixed_block nav .navbar-header {
-  float: left;
-}
 .topnav_fixed_block nav .navbar-header .navbar-toggle {
-  /*display: none;*/
   position: relative;
   float: right;
+  margin: 13px 0;
   padding: 9px 10px;
-  background-color: red;
+  background-color: transparent;
   border: 1px solid transparent;
   border-radius: 4px;
 
