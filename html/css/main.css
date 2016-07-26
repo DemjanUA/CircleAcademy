@@ -104,10 +104,15 @@ header{
   color: rgba(255, 255, 255, 0.7);
   transition: all 250ms ease-in-out;
 }
+/* top navigation menu lvl2 */
+.topnav_fixed_block nav menu li>ul{
+  display: none;
+}
+/* top navigation menu lvl3 */
 .topnav_fixed_block nav menu li a:hover {
   color: #fff;
 }
-
+/* top navigation menu hover effect */
 .topnav_fixed_block nav .navbar-header{
   float: left;
 }
