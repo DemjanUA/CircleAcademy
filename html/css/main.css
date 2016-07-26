@@ -8,38 +8,44 @@ body {
   color: #333;
 }
 a {
-  text-decoration:none;
-  color:cornflowerblue;
+  text-decoration: none;
+  color: cornflowerblue;
 }
 div {
   box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin:0;
-  box-sizing:border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 ul, menu {
-  list-style : none;
+  list-style: none;
 }
 li {
 
 }
 form {
-  margin:0;
+  margin: 0;
+}
+button, input, select, textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 table {
   border-collapse:collapse;
 }
 .clearfix:after {
-  content:"";
-  display:block;
-  width:100%;
-  clear:both;
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
 }
 .justify-fix:after {
-  content:"";
-  display:inline-block;
-  width:100%;
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 .row {
   margin: 0 -15px;
@@ -47,27 +53,6 @@ table {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-}
-.wrapper {
-  margin: 0 auto;
-  width: 1140px;
-  padding: 50px 90px 0;
-}
-@media (min-width: 768px){ /* >768px */
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px){/* >992px */
-  .container {
-    width: 970px;
-
-  }
-}
-@media (min-width: 1200px){ /* >1200px */
-  .container {
-    width: 1170px;
-  }
 }
 header{
   min-height: 500px;
@@ -86,16 +71,17 @@ header{
   background: #121212;
   transition: all 250ms ease-in-out;
 }
-.topnav_fixed_block nav{
+.topnav_fixed_block nav {
   border: 1px solid transparent;
 }
-.topnav_fixed_block nav menu{
-  float: right;
+.topnav_fixed_block nav menu {
+  display: none;
+  float: none;
 }
-.topnav_fixed_block nav menu li{
+.topnav_fixed_block nav menu li {
   float: left;
 }
-.topnav_fixed_block nav menu li a{
+.topnav_fixed_block nav menu li a {
   display: block;
   padding: 0 20px;
   font: 500 11px/60px 'Raleway', 'Open Sans', Arial, Helvetica, Sans-serif;
@@ -123,7 +109,34 @@ header{
   color: transparent;
   text-indent: -9999px;
   background: url('../img/logotype.png') no-repeat left center;
-  background-attachment: scroll;
+}
+.topnav_fixed_block nav .navbar-header .navbar-toggle {
+  position: relative;
+  float: right;
+  margin: 13px 0;
+  padding: 9px 10px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  width: 22px;
+  overflow: hidden;
+  box-sizing: initial;
+  color: transparent;
+  text-indent: -9000px;
+  font-size: 0;
+  line-height: 1em;
+  cursor: pointer;
+}
+.topnav_fixed_block nav .navbar-header  .icon-bar{
+  display: block;
+width: 22px;
+height: 2px;
+border-radius: 1px;
+background: #fff;
+}
+.topnav_fixed_block nav .navbar-header  .icon-bar + .icon-bar{
+  margin-top: 4px;
 }
 
 
@@ -134,7 +147,6 @@ header{
   position: fixed;
   min-height: 100%;
   width: 250px;
-  padding: 60px 0 0 0;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   top: 0;
   right: 0;
   border-left: 2px solid #e6e6e6;
