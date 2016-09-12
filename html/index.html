@@ -5,7 +5,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/main-header.css">
 		<link rel="stylesheet" href="css/madia.css">
+		<link rel="stylesheet" href="css/fonts.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,800,500,600' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="img/favicon.ico">
@@ -23,20 +25,20 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="site-name logo" href="#">CircleAcademy</a>
+						<a class="site-name logo" href="/">CircleAcademy</a>
 					</div>
 					<menu class="clearfix">
 						<li><a href="#">News</a></li>
-						<li>
+						<li class="has-dropdown-menu">
 							<a href="#">Courses</a>
-							<ul>
-								<li><a href="#">Front-end development</a></li>
-								<li><a href="#">Back-end development</a></li>
+							<ul class="dropdown-menu lvl2">
+								<li><a href="pages/js-basic.php">js basic</a></li>
+								<li><a href="#">back&#8209;end&nbsp;development</a></li>
 							</ul>
 						</li>
 						<li><a href="./resource">Resource</a></li>
 						<li><a href="#">Playlists</a></li>
-						<li><a href="#">Schedule</a></li>
+						<li><a href="">Schedule</a></li>
 						<li><a href="#">amet</a></li>
 						<li><a href="pages/login.php">Login</a></li>
 					</menu>
@@ -44,21 +46,43 @@
 			</div>
 		</section>
 	</div>
-	<!--CONTENT-->
-	<div class="function_fixed_block">
-		<h2>Functions</h2>
-		<ol>
-			<li><a href = "#">gettype()</a></li>
-			<li><a href = "#">print_r()</a></li>
-			<li><a href = "#">json_decod()</a></li>
-			<li><a href = "#">file_get_contents()</a></li>
-			<li><a href = "http://php.net/manual/ru/function.var-export.php">var_export()</a></li>
-		</ol>
-	</div>
+	
 	<header>
 
 	</header>
+	<!--CONTENT-->
 	<div class="wrapper">
+		<h2>Программа курса</h2>
+		<br>
+		<ul class="course-list">
+			<li><a target="_blank" href="#"> lecture 1</a></li>
+			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTNmJGZEZGVXRGRm8/view"> lecture 2</a></li>
+			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTZEZYRl93a0FyS0k/view"> lecture 3 (Операторы и управляющие конструкции)</a></li>
+			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTUjItcllHNGRfUkk/view"> lecture 4 (Пользовательские функции)</a></li>
+			<li>
+				<a target="_blank" href="#">lecture 5 is coming</a>
+				<ul>
+					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTTFBVaWVhc0dua3c/view"> lecture 5.1 (Функции работы с файлами)</a></li>
+					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTRHdZdFJiZTZxQ1k/view"> lecture 5.2 (Функции для работы со строками)</a></li>
+					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTR3pHN1F0amJuZ1k/view"> lecture 5.3 (Функции для работы с масивами)</a></li>
+				</ul>
+			</li>
+			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTMHdmcUQzMWRrbHc/view"> lecture 6 (Технология REST. Методы передачи данных GET и POST)</a></li>
+			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTSkstT0V2Yzh1N28/view"> lecture 7 (Глобальные переменные)</a></li>
+			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTZGREcm9uQWVfNVE/view"> lecture 8 (Регулярные выражения)</a></li>
+			<li><a target="_blank" href="#"> lecture 9 (что-то о гит)</a></li>
+			<li>
+				<a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTUTh3SzNfdS02TUU/view"> lecture 10 (База Данных MySQL)</a>
+				<ul>
+					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTODZ3ZkR2Ujc4bW8/view"> lecture 10.1 (Запросы select, insert, update, delete)</a></li>
+					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTLUlzNG5DdzlROVU/view"> lecture 10.2 (Индексация баз данных. primery key, index, unique, fulltext)</a></li>
+					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTbWxqaS0zN01UV1E/view"> lecture 10.3 (MySQL + PHP. LEFT/RIGHT/INNER/OUTER JOIN)</a></li>
+				</ul>
+			</li>
+			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTRVA0VTM0VkE2QVE/view"> lecture 11 (Объектно-ориентированный PHP)</a></li>
+			<li><a target="_blank" href="#"> lecture 12 ()</a></li>
+		</ul>
+		<!-- *********************************** -->
 		<h2 class="tasks_title">Задачи</h2>
 		<p class="exercise">
 			1.	Создать папку с файлами  *.php и фалойм index.php.
@@ -117,43 +141,16 @@
 		</p>
 		<p class="exercise">
 			3. Создать класс с именем Rectangle.
-		В теле класса создать две переменные, описывающие длины сторон side1, side2.
-		Обявить обьект Rectangle(side1, side2), в теле которого поля side1 и side2 инициализируются значениями аргументов.
-		Создать два метода, вычисляющие площадь прямоугольника - AreaCalculator() и периметр прямоугольника - PerimeterCalculator().
-		Создать два свойства Area и Perimeter.
-		Написать программу, которая принимает от пользователя длины двух сторон прямоугольника и выводит на экран периметр и площадь.
-	</p>
+			В теле класса создать две переменные, описывающие длины сторон side1, side2.
+			Обявить обьект Rectangle(side1, side2), в теле которого поля side1 и side2 инициализируются значениями аргументов.
+			Создать два метода, вычисляющие площадь прямоугольника - AreaCalculator() и периметр прямоугольника - PerimeterCalculator().
+			Создать два свойства Area и Perimeter.
+			Написать программу, которая принимает от пользователя длины двух сторон прямоугольника и выводит на экран периметр и площадь.
+		</p>
 		<!-- *********************************** -->
 		<br>
 		<br>
-		<!-- *********************************** -->
-		<ul>
-	 		<li><a target="_blank" href="#"> lecture 1</a></li>
-			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTNmJGZEZGVXRGRm8/view"> lecture 2</a></li>
-			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTZEZYRl93a0FyS0k/view"> lecture 3 (Операторы и управляющие конструкции)</a></li>
-			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTUjItcllHNGRfUkk/view"> lecture 4 (Пользовательские функции)</a></li>
-			<li>
-				<a target="_blank" href="#">lecture 5 is coming</a>
-				<ul>
-					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTTFBVaWVhc0dua3c/view"> lecture 5.1 (Функции работы с файлами)</a></li>
-					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTRHdZdFJiZTZxQ1k/view"> lecture 5.2 (Функции для работы со строками)</a></li>
-					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTR3pHN1F0amJuZ1k/view"> lecture 5.3 (Функции для работы с масивами)</a></li>
-				</ul>
-			</li>
-			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTMHdmcUQzMWRrbHc/view"> lecture 6 (Технология REST. Методы передачи данных GET и POST)</a></li>
-			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTSkstT0V2Yzh1N28/view"> lecture 7 (Глобальные переменные)</a></li>
-			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTZGREcm9uQWVfNVE/view"> lecture 8 (Регулярные выражения)</a></li>
-			<li><a target="_blank" href="#"> lecture 9 (что-то о гит)</a></li>
-			<li>
-				<a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTUTh3SzNfdS02TUU/view"> lecture 10 (База Данных MySQL)</a>
-				<ul>
-					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTODZ3ZkR2Ujc4bW8/view"> lecture 10.1 (Запросы select, insert, update, delete)</a></li>
-					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTLUlzNG5DdzlROVU/view"> lecture 10.2 (Индексация баз данных. primery key, index, unique, fulltext)</a></li>
-					<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTbWxqaS0zN01UV1E/view"> lecture 10.3 (MySQL + PHP. LEFT/RIGHT/INNER/OUTER JOIN)</a></li>
-				</ul>
-			</li>
-			<li><a target="_blank" href="https://drive.google.com/file/d/0BwkTykTI_0gTRVA0VTM0VkE2QVE/view"> lecture 11 (Объектно-ориентированный PHP)</a></li>
-		</ul>
+
 		<br>
 		<video src="resource/htnl5_history.mp4" width="100%" height="auto" controls></video>
 		<br>
@@ -162,5 +159,8 @@
 		<div style="padding:80px 0; background:#28292A"></div>
 		<div style="padding:24px 0; background:#0E0E0E"></div>
 	</footer>
+	<script src="js/jquery-3.1.0.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/main-header.js"></script>	
 </body>
 </html>
