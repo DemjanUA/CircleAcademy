@@ -4,7 +4,7 @@
 
 html, body, p, menu, ul {margin: 0; padding: 0;}
 body {
-  font-family: 'Open Sans', Arial, Helvetica, Sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   color: #333;
 }
 a {
@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 ul, menu {
   list-style: none;
+  margin: 0;
 }
 li {
 
@@ -60,6 +61,11 @@ header{
   background-size: cover;
   margin: 62px 0 0 0;/*!!!!!!!!!!!!!!!!!!!!!*/
 }
+.headerjs{
+  background: url('../img/header.jpg') no-repeat;
+  background-color: rgba(243, 222, 71, 1);
+  background-size: contain;
+}
 /*********************************************/
 .topnav_fixed_block {
   position: fixed;
@@ -80,9 +86,10 @@ header{
   max-width: 780px;
 }
 .topnav_fixed_block nav menu li {
+  position: relative;
   float: left;
 }
-.topnav_fixed_block nav menu li a {
+.topnav_fixed_block li a {
   display: block;
   padding: 0 20px;
   font: 500 11px/60px 'Raleway', 'Open Sans', Arial, Helvetica, Sans-serif;
@@ -91,8 +98,24 @@ header{
   color: rgba(255, 255, 255, 0.7);
   transition: all 250ms ease-in-out;
 }
+.topnav_fixed_block .dropdown-menu{
+  position: absolute;
+  padding: 10px 0 0;
+  background: #121212;
+}
 /* top navigation menu lvl2 */
-.topnav_fixed_block nav menu li>ul{
+.topnav_fixed_block .dropdown-menu.lvl2{
+  left: auto;
+  right: 0;
+}
+.topnav_fixed_block .dropdown-menu.lvl2 li{
+  width: 100%;
+}
+.topnav_fixed_block .dropdown-menu.lvl2 li a{
+  padding: 13px 18px;
+  font: 11px/1.4em 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.topnav_fixed_block nav menu li.close>.dropdown-menu.lvl2{
   display: none;
 }
 /* top navigation menu lvl3 */
@@ -137,32 +160,6 @@ header{
   margin-top: 4px;
 }
 
-
-
-
-.function_fixed_block {
-  display: none;
-  position: fixed;
-  min-height: 100%;
-  width: 250px;
-  top: 0;
-  right: 0;
-  color : #455463;
-  border-left: 2px solid #e6e6e6;
-  background: #f0f0f0;
-}
-.function_fixed_block h2{
-  padding: 15px 0 0;
-  width: 100%;
-  text-align: center;
-  color: #222c37;
-}
-.function_fixed_block a{
-  color : #455463;
-}
-.function_fixed_block a:hover{
-  color: #00cccc;
-}
 h2.tasks_title,
 h2.home-work_title {
   padding: 15px 0 0;
@@ -200,7 +197,7 @@ p.exercise {
   margin: 40px 0 12px;
   color: #333;
 }
-li>ul{
+.course-list li>ul{
   margin: 0 0 0 20px;
 }
 /*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -211,5 +208,5 @@ li>ul{
   padding:24px 0; background:#0E0E0E;
 }
 .timeout3{
-  "margin:35px 0 0 0;
+  margin: 35px 0 0 0;
 }

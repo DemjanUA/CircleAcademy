@@ -1,0 +1,27 @@
+/* top-navigation menu lvl1 */
+.dropdown-menu{
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+.topnav_fixed_block li.has-dropdown-menu > a:after{
+    content: '\f107';
+    display: block;
+    position: absolute;
+    top: -1px;
+    right: 10px;
+    font:10px 'FontAwesome';
+    line-height: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+.open > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+li.open > a{
+    color: #fff;
+}
+/* top-navigation menu lvl2 */
