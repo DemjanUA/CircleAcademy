@@ -4,10 +4,10 @@
 		<title>PHP</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/main-header.css">
-		<link rel="stylesheet" href="css/madia.css">
-		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/main-header.css">
+		<link rel="stylesheet" href="../css/madia.css">
+		<link rel="stylesheet" href="../css/fonts.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,800,500,600' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="img/favicon.ico">
@@ -32,15 +32,15 @@
 						<li class="has-dropdown-menu">
 							<a href="#">Courses</a>
 							<ul class="dropdown-menu lvl2">
-								<li><a href="pages/js-basic.php">js basic</a></li>
-								<li><a href="#">back&#8209;end&nbsp;development</a></li>
+								<li><a href="js-basic.php">js basic</a></li>
+								<li><a href="back-end development.php">back&#8209;end&nbsp;development</a></li>
 							</ul>
 						</li>
-						<li><a href="./resource">Resource</a></li>
+						<li><a href="../resource">Resource</a></li>
 						<li><a href="#">Playlists</a></li>
 						<li><a href="">Schedule</a></li>
 						<li><a href="#">amet</a></li>
-						<li><a href="pages/login.php">Login</a></li>
+						<li><a href="login.php">Login</a></li>
 					</menu>
 				</nav>
 			</div>
@@ -152,15 +152,15 @@
 		<br>
 
 		<br>
-		<video src="resource/htnl5_history.mp4" width="100%" height="auto" controls></video>
+		<video src="../resource/htnl5_history.mp4" width="100%" height="auto" controls></video>
 		<br>
 	</div>
 	<footer style="margin:35px 0 0 0">
 		<div style="padding:80px 0; background:#28292A"></div>
 		<div style="padding:24px 0; background:#0E0E0E"></div>
 	</footer>
-	<script src="js/jquery-3.1.0.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/main-header.js"></script>	
+	<script src="../js/jquery-3.1.0.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/main-header.js"></script>	
 </body>
 </html>
