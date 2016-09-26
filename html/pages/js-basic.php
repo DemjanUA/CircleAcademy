@@ -10,7 +10,8 @@
 			<li><a target="_blank" href="https://docs.google.com/presentation/d/1DYzH2Ber43tgFFhfBdVIvmov9auklrNXQ_AvFJmlYrM/edit#slide=id.p"> lesson 1</a></li>
 			<li><a target="_blank" href="https://docs.google.com/presentation/d/1Yp8QPhBCGsWwvViFa2FcEjfkne3uURK9h4NgTnMeLpo/edit#slide=id.p"> lesson 2</a></li>
 			<li><a target="_blank" href="https://docs.google.com/presentation/d/1pZ-X5CrAdvqkGQiSyaOZTUlJkDkku1o7uwP4tfQzpsQ/edit#slide=id.p"> lesson 3</a></li>
-			<li><a target="_blank" href="https://docs.google.com/presentation/d/1VONIB-m8zzTg3eIqV8smRyM0DddQB-AxFNF8L5EbbIA/edit#slide=id.p"> lesson 4</a></li>
+			<li><a target="_blank" href="https://docs.google.com/presentation/d/1VONIB-m8zzTg3eIqV8smRyM0DddQB-AxFNF8L5EbbIA/edit#slide=id.p"> lesson 4 (Строки)</a></li>
+			<li><a target="_blank" href="https://docs.google.com/presentation/d/1jwEsKyUoout6oo0-vcxds5r2aacW12lTmaQpAGLJBfA/edit#slide=id.p">lesson 5 (Массивы)</a></li>
 			<!--<li>
 				<a target="_blank" href="#">lecture 5 is coming</a>
 				<ul>

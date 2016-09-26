@@ -61,10 +61,16 @@ header{
   background-size: cover;
   margin: 62px 0 0 0;/*!!!!!!!!!!!!!!!!!!!!!*/
 }
-.headerjs{
+.headerjs {
   background: url('../img/header.jpg') no-repeat;
   background-color: rgba(243, 222, 71, 1);
   background-size: contain;
+}
+.header-home {
+  background: url('../img/home.png') no-repeat;
+}
+.front-end {
+  background: url('../img/front-end.png') no-repeat center center;
 }
 /*********************************************/
 .topnav_fixed_block {

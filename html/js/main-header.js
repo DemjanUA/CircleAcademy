@@ -4,7 +4,9 @@ $('.has-dropdown-menu > a').click(function(){
     } else {
         $(this).parent().removeClass('open');
     }
-});
-$('.has-dropdown-menu').mouseleave(function(){
-    $('.open').removeClass('open');
-});
+    return false;
+    });
+
+    $('.has-dropdown-menu').mouseleave(function(){
+        $('.open').removeClass('open');
+    });
